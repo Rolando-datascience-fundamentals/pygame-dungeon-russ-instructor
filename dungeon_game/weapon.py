@@ -34,6 +34,7 @@ class Weapon():
         self.__angle = math.degrees(math.atan2(y_dist, x_dist))
 
         # get mouseclick
+        arrow = None
         if pygame.mouse.get_pressed()[0]:
             arrow = Arrow(self.__arrow_image,
                           self.__rect.centerx, self.__rect.centery, self.__angle)
